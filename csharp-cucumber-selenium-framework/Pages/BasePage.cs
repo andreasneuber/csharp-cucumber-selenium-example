@@ -55,7 +55,7 @@ namespace csharp_cucumber_selenium_framework.Pages
         {
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
             var element = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(xPathLocator)));
-            return element.GetAttribute(attributeName);
+            return element.GetDomAttribute(attributeName);
         }
     }
 }
