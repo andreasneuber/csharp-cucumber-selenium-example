@@ -4,13 +4,17 @@ using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Safari;
 using System.Collections.Generic;
-using System.Configuration;
+using System.IO;
+using System.Reflection;
 
 namespace csharp_cucumber_selenium_framework
 {
     public class BrowserFactory
     {
         public IWebDriver browser;
+
+        // This gets the Chromedriver from the Nuget package
+        private readonly string LocationNuGetChromeDriver = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
         public BrowserFactory(string browserName) {
 
@@ -41,8 +45,11 @@ namespace csharp_cucumber_selenium_framework
         private ChromeDriver SetChrome()
         {
             var options = new ChromeOptions();
-            options.AddArguments(new List<string>() { });
-            return new ChromeDriver(options);
+            options.AddArguments(new List<string>()
+            {
+
+            });
+            return new ChromeDriver(LocationNuGetChromeDriver, options);
         }
 
         private ChromeDriver SetChromeHeadless()
@@ -50,12 +57,10 @@ namespace csharp_cucumber_selenium_framework
             var options = new ChromeOptions();
             options.AddArguments(new List<string>()
             {
-                "--silent-launch",
-                "--no-startup-window",
-                "no-sandbox",
-                "headless"
+                "--no-sandbox",
+                "--headless=new",
             });
-            return new ChromeDriver(options);
+            return new ChromeDriver(LocationNuGetChromeDriver, options);
         }
 
         private FirefoxDriver SetFirefox()
