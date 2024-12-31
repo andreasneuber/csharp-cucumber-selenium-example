@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\NUnit.4.3.1\build\NUnit.props" Condition="Exists('..\packages\NUnit.4.3.1\build\NUnit.props')" />
+  <Import Project="..\packages\NUnit.4.3.2\build\NUnit.props" Condition="Exists('..\packages\NUnit.4.3.2\build\NUnit.props')" />
   <Import Project="..\packages\MSTest.TestAdapter.3.7.0\build\net462\MSTest.TestAdapter.props" Condition="Exists('..\packages\MSTest.TestAdapter.3.7.0\build\net462\MSTest.TestAdapter.props')" />
   <Import Project="..\packages\Microsoft.Testing.Extensions.Telemetry.1.5.0\build\netstandard2.0\Microsoft.Testing.Extensions.Telemetry.props" Condition="Exists('..\packages\Microsoft.Testing.Extensions.Telemetry.1.5.0\build\netstandard2.0\Microsoft.Testing.Extensions.Telemetry.props')" />
   <Import Project="..\packages\Microsoft.Testing.Platform.MSBuild.1.5.0\build\Microsoft.Testing.Platform.MSBuild.props" Condition="Exists('..\packages\Microsoft.Testing.Platform.MSBuild.1.5.0\build\Microsoft.Testing.Platform.MSBuild.props')" />
@@ -119,11 +119,11 @@
     <Reference Include="NuGet.Frameworks, Version=6.12.1.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\NuGet.Frameworks.6.12.1\lib\net472\NuGet.Frameworks.dll</HintPath>
     </Reference>
-    <Reference Include="nunit.framework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnit.4.3.1\lib\net462\nunit.framework.dll</HintPath>
+    <Reference Include="nunit.framework, Version=4.3.2.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.4.3.2\lib\net462\nunit.framework.dll</HintPath>
     </Reference>
-    <Reference Include="nunit.framework.legacy, Version=4.4.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnit.4.3.1\lib\net462\nunit.framework.legacy.dll</HintPath>
+    <Reference Include="nunit.framework.legacy, Version=4.3.2.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.4.3.2\lib\net462\nunit.framework.legacy.dll</HintPath>
     </Reference>
     <Reference Include="SeleniumExtras.WaitHelpers, Version=3.11.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\DotNetSeleniumExtras.WaitHelpers.3.11.0\lib\net45\SeleniumExtras.WaitHelpers.dll</HintPath>
@@ -255,8 +255,8 @@
     <Error Condition="!Exists('..\packages\Microsoft.Testing.Extensions.Telemetry.1.5.0\build\netstandard2.0\Microsoft.Testing.Extensions.Telemetry.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Testing.Extensions.Telemetry.1.5.0\build\netstandard2.0\Microsoft.Testing.Extensions.Telemetry.props'))" />
     <Error Condition="!Exists('..\packages\MSTest.TestAdapter.3.7.0\build\net462\MSTest.TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSTest.TestAdapter.3.7.0\build\net462\MSTest.TestAdapter.props'))" />
     <Error Condition="!Exists('..\packages\MSTest.TestAdapter.3.7.0\build\net462\MSTest.TestAdapter.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSTest.TestAdapter.3.7.0\build\net462\MSTest.TestAdapter.targets'))" />
-    <Error Condition="!Exists('..\packages\NUnit.4.3.1\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit.4.3.1\build\NUnit.props'))" />
     <Error Condition="!Exists('..\packages\Selenium.WebDriver.4.27.0\build\Selenium.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.4.27.0\build\Selenium.WebDriver.targets'))" />
+    <Error Condition="!Exists('..\packages\NUnit.4.3.2\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit.4.3.2\build\NUnit.props'))" />
   </Target>
   <Import Project="..\packages\SpecFlow.3.9.74\build\SpecFlow.targets" Condition="Exists('..\packages\SpecFlow.3.9.74\build\SpecFlow.targets')" />
   <Import Project="..\packages\SpecFlow.Tools.MsBuild.Generation.3.9.74\build\SpecFlow.Tools.MsBuild.Generation.targets" Condition="Exists('..\packages\SpecFlow.Tools.MsBuild.Generation.3.9.74\build\SpecFlow.Tools.MsBuild.Generation.targets')" />
