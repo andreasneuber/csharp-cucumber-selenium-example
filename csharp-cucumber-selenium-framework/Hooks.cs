@@ -1,7 +1,7 @@
-﻿using BoDi;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
+using Reqnroll;
+using Reqnroll.BoDi;
 using System.Configuration;
-using TechTalk.SpecFlow;
 
 // Example of filtering hooks using tags
 // See https://docs.specflow.org/projects/specflow/en/latest/Bindings/Hooks.html?highlight=hooks#tag-scoping

@@ -1,7 +1,7 @@
 using csharp_cucumber_selenium_framework.Pages;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
-using TechTalk.SpecFlow;
+using Reqnroll;
 
 namespace csharp_cucumber_selenium_framework.StepDefinitions
 {

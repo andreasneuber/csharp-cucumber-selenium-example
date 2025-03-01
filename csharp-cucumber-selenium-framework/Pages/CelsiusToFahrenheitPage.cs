@@ -1,5 +1,4 @@
 ﻿using OpenQA.Selenium;
-using System;
 
 // https://blog.testproject.io/2020/11/09/page-object-model-in-selenium-using-c-sharp-nunit-reporting/
 
