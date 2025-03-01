@@ -1,5 +1,5 @@
 # csharp-cucumber-selenium-example
-A sample implementation of BDD UI tests with C# / SpecFlow
+A sample implementation of BDD UI tests with C# / NUnit / Reqnroll
 
 ## Application under test
 The feature files, step definitions and page objects were written for https://github.com/andreasneuber/automatic-test-sample-site.
@@ -12,7 +12,6 @@ Microsoft Visual Studio Community 2022 (with .NET desktop development workload)
 - git clone 
 - Double-click file `csharp-cucumber-selenium-framework.sln`
 - Solution opens in Visual Studio
-- Go to "Extensions" > "Manage Extensions" and get "SpecFlow for Visual Studio 2022"
 - Right-click on solution, build solution
 - Go to "View" and open the "Test Explorer" window
 - Click green "Run All Tests In View" button
@@ -34,16 +33,6 @@ Open file `app.config` and find key "Browser". You can choose between:
 - safari
 After changing the browser, rebuild the solution.
 
-### SpecFlow LivingDocs reports locally
-[Step-by-step guide for LivingDoc Generator](https://docs.specflow.org/projects/specflow-livingdoc/en/latest/sbsguides/sbscli.html)
-
-### SpecFlow LivingDocs reports on Azure DevOps
-To view the "SpecFlow LivingDocs" comfortably [an extension is required](https://docs.specflow.org/projects/specflow-livingdoc/en/latest/Installation/Installation.html).
-
-Step `SpecFlow+ build step.` in file `azure-pipelines.yml` will generate and upload the report.
-
-Report will appear under menu item "Overview > SpecFlow+ LivingDoc".
-
 ### Helpful VS keyboard shortcuts
 - Duplicate line: `CTRL + E + V`
 - Go to definition: `F12`
@@ -60,3 +49,6 @@ See app.config > appSettings
 #### Error "csharp-cucumber-selenium-framework\bin\Debug\chromedriver.exe". Access to the path 'csharp-cucumber-selenium-framework\bin\Debug\chromedriver.exe' is denied.
 - Run `taskkill /f /im chromedriver.exe`
 - Clean solution
+
+### Links
+- [Reqnroll Documentation](https://docs.reqnroll.net/latest/index.html)
